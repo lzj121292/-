@@ -8,25 +8,25 @@ python-dateutil>=2.8.2
 pytz>=2023.3 
 matplotlib>=3.7.2
 
-# 1.test.py 从中国货币网获取债券市场信息
-# 当用户使用时需修改请求头中的User-Agent
-# 请求头在开发者工具，网络选项标签，通过所需的信息进行搜素操作后，找到对应的bondmarketlnfolisten请求
-# 查看 请求头 和请求参数 并对应所写代码进行修改即可
-# 请求头样式：
-# headers = {
-#     'Accept': 'application/json, text/javascript, */*; q=0.01',
-#     'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-#     'User-Agent': '...',  # 浏览器标识
-#     'Referer': 'https://iftp.chinamoney.com.cn/english/bdInfo/',
-# }
+ 1.test.py 从中国货币网获取债券市场信息
+ 当用户使用时需修改请求头中的User-Agent
+ 请求头在开发者工具，网络选项标签，通过所需的信息进行搜素操作后，找到对应的bondmarketlnfolisten请求
+ 查看 请求头 和请求参数 并对应所写代码进行修改即可
+ 请求头样式：
+ headers = {
+    'Accept': 'application/json, text/javascript, */*; q=0.01',
+     'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+     'User-Agent': '...',  # 浏览器标识
+     'Referer': 'https://iftp.chinamoney.com.cn/english/bdInfo/',
+ }
 # 请求参数：
-# payload = {
-#     "pageNo": "1",          # 页码
-#     "pageSize": "15",       # 每页数量
-#     "bondType": "100001",   # 债券类型（国债）
-#     "issueYear": "2023",    # 发行年份
-#     # ... 其他请求参数
-# }
+ payload = {
+     "pageNo": "1",          # 页码
+    "pageSize": "15",       # 每页数量
+     "bondType": "100001",   # 债券类型（国债）
+     "issueYear": "2023",    # 发行年份
+   ... 其他请求参数
+}
 
 - 数据来源：中国货币网 (https://iftp.chinamoney.com.cn/english/bdInfo/)
 - 统计期间：2023年全年
